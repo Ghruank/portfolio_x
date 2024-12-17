@@ -19,7 +19,7 @@ export default function SkillsPage() {
     {
       category: "Backend Development",
       icon: Code,
-      items: ["NodeJS", "ExpressJS", "Flask", "REST APIs"],
+      items: ["ExpressJS", "Flask", "REST APIs"],
     },
     {
       category: "Competitive Programming",
@@ -39,7 +39,7 @@ export default function SkillsPage() {
     {
       category: "Other Skills",
       icon: Globe,
-      items: ["Git", "VS Code", "NVim", "WSL"],
+      items: ["Git", "NVim", "WSL (Debian)"],
     },
   ]
 

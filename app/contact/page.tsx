@@ -19,13 +19,13 @@ export default function ContactPage() {
             <p className="text-muted-foreground break-all">gpkothare_b23@it.vjti.ac.in</p>
           </Card>
 
-          <Card className="p-4">
+          {/* <Card className="p-4">
             <div className="flex items-center gap-2 mb-2">
               <Phone className="h-5 w-5" />
               <h2 className="font-semibold">Phone</h2>
             </div>
             <p className="text-muted-foreground">+91 70392 60198</p>
-          </Card>
+          </Card> */}
 
           <Card className="p-4">
             <div className="flex items-center gap-2 mb-2">

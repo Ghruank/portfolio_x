@@ -6,6 +6,7 @@ import profile from '@/assets/gojohands.jpeg';
 import background from '@/assets/marinedrive.jpg';
 import PageHeader from '@/components/page-header';
 import windows95 from '@/assets/windows95.png';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -58,10 +59,12 @@ export default function Home() {
             </div>
             
             <div className="flex gap-4 mt-4">
-              <p>
-                <span className="font-semibold">1</span>{" "}
-                <span className="text-muted-foreground">Following</span>
-              </p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target='_blank' className="hover:underline underline-offset-2">
+                  <p>
+                  <span className="font-semibold">1</span>{" "}
+                  <span className="text-muted-foreground">Following</span>
+                  </p>
+                </a>
               {/* <p>
                 <span className="font-semibold">0</span>{" "}
                 <span className="text-muted-foreground">Followers</span>
