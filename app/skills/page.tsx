@@ -24,7 +24,7 @@ export default function SkillsPage() {
     {
       category: "Competitive Programming",
       icon: Computer,
-      items: ["CodeChef: 3 Star", "Codeforces: 1000+ Rating"],
+      items: ["CodeChef: 3 Star", "Codeforces: 1000+ Rating", "ICPC'24 Regionalist"],
     },
     {
       category: "Machine Learning",

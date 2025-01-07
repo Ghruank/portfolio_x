@@ -24,7 +24,7 @@ export default function ContactPage() {
               <Phone className="h-5 w-5" />
               <h2 className="font-semibold">Phone</h2>
             </div>
-            <p className="text-muted-foreground">+91 70392 60198</p>
+            <p className="text-muted-foreground">no number</p>
           </Card> */}
 
           <Card className="p-4">

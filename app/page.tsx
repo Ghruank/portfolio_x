@@ -42,7 +42,7 @@ export default function Home() {
             </div>
             
             <p className="mt-4">
-              IT Sophomore at VJTI
+              IT Sophomore at VJTI<br/>ICPC Regionalist
             </p>
             
             <div className="flex flex-wrap gap-4 mt-4 text-muted-foreground">
@@ -78,13 +78,16 @@ export default function Home() {
           <Card className="p-4">
             <h2 className="font-semibold mb-2">About Me</h2>
             <p className="text-sm text-muted-foreground">
-              Who am I? A fullstack developer with expertise in NextJS and Flask, a competitive programmer with immense curiosity in algorithm designing and a machine learning enthusiast.
+              A fullstack developer with expertise in NextJS and Flask, a competitive programmer with immense curiosity in algorithm designing and a machine learning enthusiast.
             </p>
           </Card>
           
           <Card className="p-4">
             <h2 className="font-semibold mb-2">Achievements</h2>
             <ul className="space-y-2">
+              <li className="text-sm hover:text-primary cursor-pointer">
+                Qualified for the ICPC'24 Chennai Regional.
+              </li>
               <li className="text-sm hover:text-primary cursor-pointer">
                 Won the Best FY award at the HackXCelerate Hackathon at VJTI, 2024.
               </li>
@@ -95,6 +98,14 @@ export default function Home() {
                 Top 10 at the Vega Hackathon, SAKEC, 2024.
               </li>
             </ul>
+          </Card>
+        </div>
+        <div className="mt-8 sm:hidden">
+          <Card className="p-4 bg-accent text-center">
+            <h2 className="font-semibold mb-2">Navigation Tips</h2>
+            <p className="text-sm text-muted-foreground">
+              Tap on the icons below to explore different sections of my portfolio. You're dumb if you couldnt figure that out already.
+            </p>
           </Card>
         </div>
 
