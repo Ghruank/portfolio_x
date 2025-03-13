@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Mail, MapPin, Phone, Linkedin, Github, Twitter } from "lucide-react"
+import { Mail, MapPin, Phone, Linkedin, Github, Twitter, ExternalLink } from "lucide-react"
 import { FaDiscord, FaCode, FaCodepen } from "react-icons/fa"
 import PageHeader from "@/components/page-header"
 export default function ContactPage() {
@@ -16,7 +16,12 @@ export default function ContactPage() {
               <Mail className="h-5 w-5" />
               <h2 className="font-semibold">Email</h2>
             </div>
-            <p className="text-muted-foreground break-all">gpkothare_b23@it.vjti.ac.in</p>
+            <div className="flex items-center justify-between">
+              <p className="text-muted-foreground break-all">gpkothare_b23@it.vjti.ac.in</p>
+              <a href="mailto:gpkothare_b23@it.vjti.ac.in" target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4 text-muted-foreground" />
+              </a>
+            </div>
           </Card>
 
           {/* <Card className="p-4">
@@ -87,7 +92,7 @@ export default function ContactPage() {
                 }}
                 id="discord-button"
                 >
-                <FaDiscord className="mr-2 h-4 w-4" /> {/* Use the Discord icon here */}
+                <FaDiscord className="mr-2 h-4 w-4" /> 
                 Discord
                 </Button>
               <Button variant="outline" className="flex-1 basis-[calc(50%-0.5rem)] min-w-[120px]" asChild>

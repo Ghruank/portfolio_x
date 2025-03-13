@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Code, Database, Globe, Palette, Computer, GitGraph, Languages } from "lucide-react"
+import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard} from "lucide-react"
 import PageHeader from "@/components/page-header"
 
 export default function SkillsPage() {
@@ -19,7 +19,12 @@ export default function SkillsPage() {
     {
       category: "Backend Development",
       icon: Code,
-      items: ["ExpressJS", "Flask", "REST APIs"],
+      items: ["ExpressJS", "Flask", "FastAPI"],
+    },
+    {
+      category: "Database Management",
+      icon: DatabaseIcon,
+      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)", "GoLang"],
     },
     {
       category: "Competitive Programming",
@@ -36,6 +41,11 @@ export default function SkillsPage() {
     //   icon: Database,
     //   items: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "SQL"],
     // },
+    {
+      category: "Hardware",
+      icon: CircuitBoard,
+      items: ["Arduino", "OpenCV", "ROS2"],
+    },
     {
       category: "Other Skills",
       icon: Globe,

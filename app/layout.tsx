@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Ghruank Kothare',
   description: 'Portfolio of Ghruank Kothare',
+  icons: {
+    icon: "/glogo2.png", // or "/favicon.png"
+  },
 };
 
 export default function RootLayout({

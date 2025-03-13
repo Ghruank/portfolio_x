@@ -6,8 +6,30 @@ import PageHeader from "@/components/page-header"
 import win95 from "@/assets/windows95.png"
 import greenit from "@/assets/greenit.png"
 import market from "@/assets/market.png"
+import mappaterm from "@/assets/mappaterm.png"
+import mappaide from "@/assets/mappaide.png"
+import student from "@/assets/student.png"
+import soulbuddy from "@/assets/soulbuddy.png"
 export default function ProjectsPage() {
   const projects = [
+    {
+      title: "MappaIDE",
+      description: "A real time collaborative IDE with repository system, inbuilt version control system, merge conflict resolver, and a chat system.",
+      image: mappaide,
+      tech: ["NextJS", "FastAPI", "LiveBlocks"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/mappa_for_ide",
+    },
+    {
+      title: "Mappa for Terminal",
+      description: "High powered voice controlled terminal assistant with inbuilt commands for git, docker, and other terminal commands.",
+      image: mappaterm,
+      tech: ["Python", "Llama 3.2", "Grok"],
+      start: true,
+      demo: "https://mappaforterminal.vercel.app",
+      github: "https://github.com/Ghruank/mappa_for_terminal",
+    },
     {
       title: "Windows 95 Virtual Machine",
       description: "A virtual machine (more or less a GUI clone) of the Windows 95 operating system, made entirely in Python Tkinter.",
@@ -15,6 +37,15 @@ export default function ProjectsPage() {
       tech: ["Python", "Tkinter"],
       // demo: "https://demo.com",
       github: "https://github.com/Ghruank/win95_vm_tkinter",
+    },
+    {
+      title: "Soul Buddy: A Spiritual Guide",
+      description: "SoulBuddy is an AI-driven platform designed to deliver personalized spiritual guidance through the ancient sciences of astrology and numerology. Our platform has kundali and horoscope generation, AI powered recommendations, spiritual content delivery and an interactive chatbot",
+      image: soulbuddy,
+      tech: ["NextJS", "Flask", "DataStax", "Langflow"],
+      start: true,
+      demo: "https://supermind-grll.vercel.app",
+      github: "https://github.com/Ghruank/Soul_Buddy",
     },
     {
       title: "Eco-Tracker (GreenIt)",
@@ -32,6 +63,15 @@ export default function ProjectsPage() {
       tech: ["ReactJS", "Flask", "Meta AI", "Lllama 3.2"],
       demo: "",
       github: "https://github.com/Ghruank/marketing-assistant",
+    },
+    {
+      title: "Student Registeration Portal",
+      description: "A Full Fledged DBMS Project for student registeration, with SQL queries, triggers, and procedures.",
+      image: student,
+      tech: ["HTML", "GoLang", "MySQL"],
+      start: true,
+      demo: "https://ghruank.github.io/dbms/",
+      github: "https://github.com/Ghruank/dbms",
     },
     {
       title: "Stock Transformers",
@@ -57,6 +97,7 @@ export default function ProjectsPage() {
       demo: "",
       github: "https://github.com/Ghruank/Legal-Research-Assistant",
     },
+
   ]
 
   return (

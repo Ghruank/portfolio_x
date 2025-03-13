@@ -6,6 +6,8 @@ import profile from '@/assets/gojohands.jpeg';
 import background from '@/assets/marinedrive.jpg';
 import PageHeader from '@/components/page-header';
 import windows95 from '@/assets/windows95.png';
+import arch from '@/assets/arch.png';
+import mappaide from '@/assets/mappaide.png';
 import Link from 'next/link';
 
 export default function Home() {
@@ -52,7 +54,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-1">
                 <LinkIcon className="h-4 w-4" />
-                <a href="ghruank.vercel.app" className="hover:text-primary">
+                <a href="https://ghruank.vercel.app" className="hover:text-primary">
                   ghruank.vercel.app
                 </a>
               </div>
@@ -78,33 +80,54 @@ export default function Home() {
           <Card className="p-4">
             <h2 className="font-semibold mb-2">About Me</h2>
             <p className="text-sm text-muted-foreground">
-              A fullstack developer with expertise in NextJS and Flask, a competitive programmer with immense curiosity in algorithm designing and a machine learning enthusiast.
+              A fullstack developer with expertise in NextJS and FastAPI, a competitive programmer with immense curiosity in algorithm designing and a machine learning enthusiast.
+            </p>
+          </Card>
+          <Card className="p-4">
+            <h2 className="text-lg font-semibold mb-2">Featured Project</h2>
+            <Image
+              src={mappaide}
+              alt="Project"
+              width={600}
+              height={300}
+              className="rounded-lg mb-2"
+            />
+            <h3 className="font-semibold">Mappa IDE</h3>
+            <p className="text-muted-foreground">
+              An online real-time collaborative IDE with custom version control system, an inbuilt terminal and AI chatbot for code suggestions.
             </p>
           </Card>
           
           <Card className="p-4">
-            <h2 className="font-semibold mb-2">Achievements</h2>
+            <h2 className="font-semibold mb-2">Interests</h2>
             <ul className="space-y-2">
               <li className="text-sm hover:text-primary cursor-pointer">
-                Qualified for the ICPC'24 Chennai Regional.
+              Into machine learning and transformer models — currently messing around with running LLMs locally.
               </li>
               <li className="text-sm hover:text-primary cursor-pointer">
-                Won the Best FY award at the HackXCelerate Hackathon at VJTI, 2024.
+              Love solving problems with algorithms and figuring out efficient ways to implement them.
               </li>
               <li className="text-sm hover:text-primary cursor-pointer">
-                Top 10 at the Technovate Hackathon, SPIT, 2024.
+              Typing at 120+ WPM on my ZBook, trying to push that even higher.
               </li>
               <li className="text-sm hover:text-primary cursor-pointer">
-                Top 10 at the Vega Hackathon, SAKEC, 2024.
+                Massive Jujutsu Kaisen manga fan, always down to chat about it.
+              </li>
+              <li className="text-sm hover:text-primary cursor-pointer">
+              Oh, and yeah… I use Arch, btw.
               </li>
             </ul>
           </Card>
+
+          {/* Featured Project for Mobile */}
+
         </div>
+
         <div className="mt-8 sm:hidden">
           <Card className="p-4 bg-accent text-center">
             <h2 className="font-semibold mb-2">Navigation Tips</h2>
             <p className="text-sm text-muted-foreground">
-              Tap on the icons below to explore different sections of my portfolio. You're dumb if you couldnt figure that out already.
+              Tap on the icons below to explore different sections of my portfolio. 
             </p>
           </Card>
         </div>
@@ -114,15 +137,15 @@ export default function Home() {
           <Card className="p-4">
             <h2 className="text-lg font-semibold mb-2">Featured Project</h2>
             <Image
-              src={windows95}
+              src={mappaide}
               alt="Project"
               width={600}
               height={300}
               className="rounded-lg mb-2"
             />
-            <h3 className="font-semibold">Windows 95 Clone</h3>
+            <h3 className="font-semibold">Mappa IDE</h3>
             <p className="text-muted-foreground">
-              An interface of Windows 95 built using Python Tkinter
+              An online real-time collaborative IDE with custom version control system, an inbuilt terminal and AI chatbot for code suggestions.
             </p>
           </Card>
         </div>
