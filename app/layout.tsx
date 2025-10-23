@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Sidebar from '@/components/sidebar';
 import RightSidebar from '@/components/right-sidebar';
 import MobileNav from '@/components/mobile-nav';
+import MobileSidebar from '@/components/mobile-sidebar';
+import { MobileSidebarProvider } from '@/components/mobile-sidebar-provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,14 +27,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="container mx-auto flex min-h-screen max-w-7xl gap-4">
-            <Sidebar />
-            <main className="flex-1 border-x border-border min-h-screen pb-16 md:pb-0">
-              {children}
-            </main>
-            <RightSidebar />
-          </div>
-          <MobileNav />
+          <MobileSidebarProvider>
+            <div className="container mx-auto flex min-h-screen max-w-7xl gap-4">
+              <Sidebar />
+              <main className="flex-1 border-x border-border min-h-screen pb-16 md:pb-0">
+                {children}
+              </main>
+              <RightSidebar />
+            </div>
+            <MobileNav />
+          </MobileSidebarProvider>
         </ThemeProvider>
       </body>
     </html>

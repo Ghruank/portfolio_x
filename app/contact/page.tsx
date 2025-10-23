@@ -5,10 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Mail, MapPin, Phone, Linkedin, Github, Twitter, ExternalLink } from "lucide-react"
 import { FaDiscord, FaCode, FaCodepen } from "react-icons/fa"
 import PageHeader from "@/components/page-header"
+import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
+
 export default function ContactPage() {
+  const { toggle } = useMobileSidebar()
+  
   return (
     <div>
-      <PageHeader title="Contact Me" />
+      <PageHeader title="Contact Me" onMenuClick={toggle} />
       <div className="p-4">
         <div className="grid gap-4">
           <Card className="p-4">

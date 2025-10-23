@@ -1,8 +1,13 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Calendar } from "lucide-react"
 import PageHeader from "@/components/page-header"
+import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 
 export default function BlogPage() {
+  const { toggle } = useMobileSidebar()
+  
   const posts = [
     {
       title: "This page is still under construction",
@@ -29,7 +34,7 @@ export default function BlogPage() {
 
   return (
     <div>
-      <PageHeader title="Blog" />
+      <PageHeader title="Blog" onMenuClick={toggle} />
       <div className="p-4">
         <div className="grid gap-4">
           {posts.map((post) => (

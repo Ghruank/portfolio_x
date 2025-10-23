@@ -3,8 +3,11 @@
 import { Card } from "@/components/ui/card"
 import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard} from "lucide-react"
 import PageHeader from "@/components/page-header"
+import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 
 export default function SkillsPage() {
+  const { toggle } = useMobileSidebar()
+  
   const skills = [
     {
       category: "Languages",
@@ -55,7 +58,7 @@ export default function SkillsPage() {
 
   return (
     <div>
-      <PageHeader title="Skills & Expertise" />
+      <PageHeader title="Skills & Expertise" onMenuClick={toggle} />
       <div className="p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {skills.map((skill) => {

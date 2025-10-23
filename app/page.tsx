@@ -1,3 +1,5 @@
+"use client"
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -9,11 +11,14 @@ import windows95 from '@/assets/windows95.png';
 import arch from '@/assets/arch.png';
 import mappaide from '@/assets/mappaide.png';
 import Link from 'next/link';
+import { useMobileSidebar } from '@/components/mobile-sidebar-provider';
 
 export default function Home() {
+  const { toggle } = useMobileSidebar()
+  
   return (
     <div>
-      <PageHeader title="Profile" />
+      <PageHeader title="Profile" onMenuClick={toggle} />
       <div className="relative h-48 bg-accent">
         <Image
           src={background}

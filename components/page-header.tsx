@@ -1,13 +1,16 @@
 "use client"
 
 import { useEffect, useState } from 'react'
+import { Menu } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
 
 interface PageHeaderProps {
   title: string
+  onMenuClick?: () => void
 }
 
-export default function PageHeader({ title }: PageHeaderProps) {
+export default function PageHeader({ title, onMenuClick }: PageHeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
@@ -26,7 +29,17 @@ export default function PageHeader({ title }: PageHeaderProps) {
         isScrolled ? "border-b" : ""
       )}
     >
-      <h1 className="text-xl font-bold">{title}</h1>
+      <div className="flex items-center gap-3">
+        <Button
+          variant="ghost"
+          size="sm"
+          className="md:hidden p-2"
+          onClick={onMenuClick}
+        >
+          <Menu className="h-5 w-5" />
+        </Button>
+        <h1 className="text-xl font-bold">{title}</h1>
+      </div>
     </div>
   )
 }

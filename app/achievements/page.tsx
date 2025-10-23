@@ -1,8 +1,13 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Calendar } from "lucide-react"
 import PageHeader from "@/components/page-header"
+import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 
 export default function AchievementsPage() {
+  const { toggle } = useMobileSidebar()
+  
   const achievements = [
         {
       title: "Crackathon Finalist",
@@ -80,7 +85,7 @@ export default function AchievementsPage() {
 
   return (
     <div>
-      <PageHeader title="Achievements" />
+      <PageHeader title="Achievements" onMenuClick={toggle} />
       <div className="p-4">
         <div className="grid gap-4">
           {achievements.map((achievement) => (

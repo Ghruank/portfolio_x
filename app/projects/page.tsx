@@ -1,8 +1,11 @@
+"use client"
+
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Github, Globe } from "lucide-react"
 import PageHeader from "@/components/page-header"
+import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 import win95 from "@/assets/windows95.png"
 import greenit from "@/assets/greenit.png"
 import market from "@/assets/market.png"
@@ -10,7 +13,10 @@ import mappaterm from "@/assets/mappaterm.png"
 import mappaide from "@/assets/mappaide.png"
 import student from "@/assets/student.png"
 import soulbuddy from "@/assets/soulbuddy.png"
+
 export default function ProjectsPage() {
+  const { toggle } = useMobileSidebar()
+  
   const projects = [
         {
       title: "Exotic Option Pricing Model",
@@ -147,7 +153,7 @@ export default function ProjectsPage() {
 
   return (
     <div>
-      <PageHeader title="Projects" />
+      <PageHeader title="Projects" onMenuClick={toggle} />
       <div className="p-4">
         <div className="grid gap-6">
           {projects.map((project) => (
