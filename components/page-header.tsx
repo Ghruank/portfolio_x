@@ -25,8 +25,8 @@ export default function PageHeader({ title, onMenuClick }: PageHeaderProps) {
   return (
     <div
       className={cn(
-        "sticky top-0 z-10 px-4 py-3 bg-background/80 backdrop-blur-md transition-all duration-200",
-        isScrolled ? "border-b" : ""
+        "sticky top-0 z-10 px-4 py-3 bg-background/70 backdrop-blur-xl transition-all duration-200 supports-[backdrop-filter]:bg-background/60",
+        isScrolled ? "border-b shadow-sm" : ""
       )}
     >
       <div className="flex items-center gap-3">

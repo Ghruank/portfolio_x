@@ -1,11 +1,13 @@
 "use client"
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { User, Computer, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Leaf, X } from 'lucide-react'
+import { User, Computer, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Leaf, X, BookOpen } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
+import profile from '@/assets/gojohands.jpeg'
 
 interface MobileSidebarProps {
   isOpen: boolean
@@ -19,6 +21,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
     { name: 'Profile', href: '/', icon: User },
     { name: 'Skills', href: '/skills', icon: Computer },
     { name: 'Projects', href: '/projects', icon: Briefcase },
+    { name: 'Blog', href: '/blog', icon: BookOpen },
     { name: 'Contact', href: '/contact', icon: Mail },
     { name: 'Achievements', href: '/achievements', icon: FileText },
   ]
@@ -39,23 +42,39 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
       
       {/* Sidebar */}
       <div className={cn(
-        "fixed top-0 left-0 h-full w-[275px] bg-background border-r z-50 transform transition-transform duration-300 ease-in-out md:hidden",
+        "fixed top-0 left-0 h-full w-[275px] bg-background/70 backdrop-blur-xl border-r z-50 transform transition-transform duration-300 ease-in-out md:hidden supports-[backdrop-filter]:bg-background/60",
         isOpen ? "translate-x-0" : "-translate-x-full"
       )}>
         <div className="flex flex-col h-full p-4">
-          <div className="flex items-center justify-between mb-6">
-            <h1 className="text-xl font-bold">Ghruank Kothare</h1>
+          {/* Profile Section */}
+          <div className="flex items-center mb-6 pb-4 border-b">
+            <div className="relative mr-3">
+              <Image
+                src={profile}
+                alt="Profile"
+                width={60}
+                height={60}
+                className="rounded-full"
+              />
+            </div>
+            <div className="flex flex-col">
+              <h2 className="text-lg font-bold">Ghruank Kothare</h2>
+              <p className="text-sm text-muted-foreground">@ghruank</p>
+            </div>
+          </div>
+
+          <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={onClose}
-                className="p-2"
-              >
-                <X className="h-5 w-5" />
-              </Button>
             </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={onClose}
+              className="p-2"
+            >
+              <X className="h-5 w-5" />
+            </Button>
           </div>
           
           <nav className="space-y-6 flex-1">
