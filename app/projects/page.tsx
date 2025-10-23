@@ -12,6 +12,51 @@ import student from "@/assets/student.png"
 import soulbuddy from "@/assets/soulbuddy.png"
 export default function ProjectsPage() {
   const projects = [
+        {
+      title: "Exotic Option Pricing Model",
+      description: "A pricing model for exotic options such as Knock-In, Knock-Out, Barrier, Asian, Binary (Digital), LookBack and Chooser Options. Models such as Monte Carlo, Heston, Black-Scholes and Binomial.",
+      // image: mappaide,
+      tech: ["Python", "PyGame"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/exotic-option-pricing-model",
+    },
+        {
+      title: "RAG Based Voice Assistant",
+      description: "Conversational Audio-to-Text Neural Assistant which is essentially an emotionally intelligent voice assistant.",
+      // image: mappaide,
+      tech: ["Python", "ElevenLabs", "AWS"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/LenDenClub-VoiceBot",
+    },
+        {
+      title: "Project X VJTI Website",
+      description: "Website for Project X.",
+      // image: mappaide,
+      tech: ["NextJS", "FastAPI"],
+      start: true,
+      demo: "https://projectx2025.vercel.app/",
+      github: "https://github.com/Ghruank/projectx",
+    },
+            {
+      title: "EEG Data Analyser and Simulator",
+      description: "A next-gen neural modeling platform that creates personalized Digital Brain Twins from EEG data, enabling clinicians to analyze, simulate, and predict neurological outcomes with AI-powered insights.",
+      // image: mappaide,
+      tech: ["NextJS", "FastAPI"],
+      start: true,
+      // demo: "https://projectx2025.vercel.app/",
+      github: "https://github.com/Ghruank/EEG_Analyser_Simulator",
+    },
+                {
+      title: "Task Manager",
+      description: "A task management app built with React, Redux, and Webpack, allowing users to filter, categorize, prioritize, search, and reorder tasks via drag-and-drop. It supports due dates with notifications and ensures data persistence via a backend. Designed for a seamless and responsive user experience",
+      // image: mappaide,
+      tech: ["NextJS", "FastAPI"],
+      start: true,
+      demo: "https://jde-taskmanager.vercel.app/",
+      github: "https://github.com/Ghruank/jde_taskmanager",
+    },
     {
       title: "MappaIDE",
       description: "A real time collaborative IDE with repository system, inbuilt version control system, merge conflict resolver, and a chat system.",

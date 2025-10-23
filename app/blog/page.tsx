@@ -8,7 +8,7 @@ export default function BlogPage() {
       title: "This page is still under construction",
       excerpt:
         "why are you here?",
-      date: "August 12, 2024",
+      date: "December 13, 2024",
       readTime: "1 min read",
     },
     // {

@@ -48,7 +48,7 @@ export default function MobileNav() {
           })}
         </div>
         <Link
-          href="https://drive.google.com/file/d/1UBpFEiw05vlf0-4BIeTOOPQ6KSEYvGPh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1CdIV1Ef0d8o5sQLqNs-Tg6kcFLNOWXFu/view?usp=sharing"
           target="_blank"
           className={cn(
             "fixed bottom-20 right-4 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center z-50 transition-all duration-1000",

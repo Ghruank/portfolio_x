@@ -4,6 +4,24 @@ import PageHeader from "@/components/page-header"
 
 export default function AchievementsPage() {
   const achievements = [
+        {
+      title: "Crackathon Finalist",
+      // competitionName: "CodeUncode",
+      location: "KJSCE",
+      date: "October 15, 2025",
+    },
+            {
+      title: "HackBuild Finalist",
+      // competitionName: "CodeUncode",
+      location: "VIT Mumbai",
+      date: "August 23, 2025",
+    },
+        {
+      title: "CodeFolio Winner",
+      // competitionName: "CodeUncode",
+      location: "SPIT",
+      date: "Mar, 2025",
+    },
     {
       title: "CodeUncode Finalist",
       // competitionName: "CodeUncode",

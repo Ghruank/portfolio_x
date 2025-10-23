@@ -9,12 +9,12 @@ export default function SkillsPage() {
     {
       category: "Languages",
       icon: Languages,
-      items: ["C++", "Python", "JavaScript"]
+      items: ["C/C++", "Python", "JavaScript", "TypeScript"]
     },
     {
       category: "Frontend Development",
       icon: Palette,
-      items: ["ReactJS", "NextJS", "Tailwind CSS" ],
+      items: ["ReactJS", "NextJS", "Tailwind CSS", "ShadCN" ],
     },
     {
       category: "Backend Development",
@@ -24,17 +24,17 @@ export default function SkillsPage() {
     {
       category: "Database Management",
       icon: DatabaseIcon,
-      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)", "GoLang"],
+      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)", "GoLang for DB"],
     },
     {
       category: "Competitive Programming",
       icon: Computer,
-      items: ["CodeChef: 3 Star", "Codeforces: 1000+ Rating", "ICPC'24 Regionalist"],
+      items: ["CodeChef: 3 Star", "Codeforces: Pupil", "ICPC'24 Regionalist"],
     },
     {
       category: "Machine Learning",
       icon: GitGraph,
-      items: ["LSTMs", "Transformer Architecture", "Informer Architecture" ],
+      items: ["LSTMs", "Transformers", "Informers", "Llama Local" ],
     },
     // {
     //   category: "Database",
@@ -44,12 +44,12 @@ export default function SkillsPage() {
     {
       category: "Hardware",
       icon: CircuitBoard,
-      items: ["Arduino", "OpenCV", "ROS2"],
+      items: ["Arduino", "ESP32", "ROS2"],
     },
     {
       category: "Other Skills",
       icon: Globe,
-      items: ["Git", "NVim", "WSL (Debian)"],
+      items: ["Linux","Nvim","Latex"],
     },
   ]
 

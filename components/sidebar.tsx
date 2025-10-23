@@ -50,7 +50,7 @@ export default function Sidebar() {
           className="w-full justify-center gap-4 text-lg font-semibold bg-blue-500 text-white rounded-full"
           asChild
         >
-          <Link href="https://drive.google.com/file/d/1UBpFEiw05vlf0-4BIeTOOPQ6KSEYvGPh/view?usp=sharing" target="_blank">
+          <Link href="https://drive.google.com/file/d/1CdIV1Ef0d8o5sQLqNs-Tg6kcFLNOWXFu/view?usp=sharing" target="_blank">
             <Leaf className="h-5 w-5" />
             Resume
           </Link>

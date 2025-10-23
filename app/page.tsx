@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             
             <p className="mt-4">
-              IT Sophomore at VJTI<br/>ICPC Regionalist
+              Pre-Final Year IT Student at VJTI Mumbai<br/>ICPC Regionalist<br/>specialization in ml but i do all kinds of stuff lol
             </p>
             
             <div className="flex flex-wrap gap-4 mt-4 text-muted-foreground">
@@ -102,8 +102,7 @@ export default function Home() {
             <h2 className="font-semibold mb-2">Interests</h2>
             <ul className="space-y-2">
               <li className="text-sm hover:text-primary cursor-pointer">
-              Into machine learning and transformer models — currently messing around with running LLMs locally.
-              </li>
+Currently working on low level stuff like embedded programming and building a wrapper for CUDA to work on non nvdia architectures.              </li>
               <li className="text-sm hover:text-primary cursor-pointer">
               Love solving problems with algorithms and figuring out efficient ways to implement them.
               </li>
@@ -117,6 +116,14 @@ export default function Home() {
               Oh, and yeah… I use Arch, btw.
               </li>
             </ul>
+          </Card>
+
+          <Card className="p-4 bg-transparent border-yellow-400/60 hover:shadow-[0_0_20px_rgba(251,191,36,0.3)] transition-all duration-300">
+            <div className="text-center">
+              <p className="text-xs text-yellow-700/90 leading-relaxed">
+                This portfolio won the First Place at the CodeFolio Best Portfolio Competition at SPIT, March 2025
+              </p>
+            </div>
           </Card>
 
           {/* Featured Project for Mobile */}
