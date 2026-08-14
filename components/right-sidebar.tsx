@@ -14,7 +14,7 @@ export default function RightSidebar() {
       <h2 className="font-semibold mb-2">Interests</h2>
 <ul className="space-y-2">
   <li className="text-sm hover:text-primary cursor-pointer">
-    Currently working on low level stuff like embedded programming and building a wrapper for CUDA to work on non nvdia architectures.
+    Currently building low latency systems for high frequency trading.
   </li>
   <li className="text-sm hover:text-primary cursor-pointer">
     Love solving problems with algorithms and figuring out efficient ways to implement them.

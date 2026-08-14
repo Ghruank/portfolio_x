@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { User, Computer, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Leaf, X, BookOpen } from 'lucide-react'
+import { User, Computer, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Leaf, X, BookOpen, Building2 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
@@ -19,6 +19,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
   
   const navigation = [
     { name: 'Profile', href: '/', icon: User },
+    { name: 'Experience', href: '/experience', icon: Building2 },
     { name: 'Skills', href: '/skills', icon: Computer },
     { name: 'Projects', href: '/projects', icon: Briefcase },
     { name: 'Blog', href: '/blog', icon: BookOpen },
@@ -102,7 +103,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
               asChild
               onClick={handleLinkClick}
             >
-              <Link href="https://drive.google.com/file/d/1CdIV1Ef0d8o5sQLqNs-Tg6kcFLNOWXFu/view?usp=sharing" target="_blank">
+              <Link href="https://drive.google.com/file/d/1n-8o5KrY8-czHcRITMaE0vTfDR-2tvTB/view?usp=sharing" target="_blank">
                 <Leaf className="h-5 w-5" />
                 Resume
               </Link>

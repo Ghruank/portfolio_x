@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, User, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Computer, Leaf, BookOpen } from 'lucide-react';
+import { Home, User, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Computer, Leaf, BookOpen, Building2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -12,6 +12,7 @@ export default function Sidebar() {
   
   const navigation = [
     { name: 'Profile', href: '/', icon: User },
+    { name: 'Experience', href: '/experience', icon: Building2 },
     { name: 'Skills', href: '/skills', icon: Computer },
     { name: 'Projects', href: '/projects', icon: Briefcase },
     { name: 'Blog', href: '/blog', icon: BookOpen },
@@ -51,7 +52,7 @@ export default function Sidebar() {
           className="w-full justify-center gap-4 text-lg font-semibold bg-blue-500 text-white rounded-full"
           asChild
         >
-          <Link href="https://drive.google.com/file/d/1CdIV1Ef0d8o5sQLqNs-Tg6kcFLNOWXFu/view?usp=sharing" target="_blank">
+          <Link href="https://drive.google.com/file/d/1n-8o5KrY8-czHcRITMaE0vTfDR-2tvTB/view?usp=sharing" target="_blank">
             <Leaf className="h-5 w-5" />
             Resume
           </Link>

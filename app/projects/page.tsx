@@ -13,11 +13,79 @@ import mappaterm from "@/assets/mappaterm.png"
 import mappaide from "@/assets/mappaide.png"
 import student from "@/assets/student.png"
 import soulbuddy from "@/assets/soulbuddy.png"
+import cognisphere from "@/assets/cognisphere.png"
+import projectx from "@/assets/projectx.png"
+import taskmanager from "@/assets/taskmanager.png"
+import axiom from "@/assets/axiom.png"
 
 export default function ProjectsPage() {
   const { toggle } = useMobileSidebar()
   
   const projects = [
+        {
+      title: "Trading Bench",
+      description: "A distributed platform for benchmarking trading matching engines under adversarial load. Contestants submit Go, Rust or C++ source, which is compiled and run inside a gVisor sandbox, then driven by a fleet of open-loop load bots across steady, stepup and spike profiles. Every fill is replayed against a reference FIFO matching engine for correctness, and a composite of latency, throughput and correctness streams to a live leaderboard. The measurement path is itself GC free end to end, with coordinated-omission correction and mergeable HdrHistograms, so the harness never becomes the bottleneck it is measuring.",
+      // image: mappaide,
+      tech: ["Go", "Rust (Tokio)", "SvelteKit", "gVisor", "Redpanda", "TimescaleDB", "Redis", "K3s"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/trading-bench",
+    },
+        {
+      title: "Quantum IRC Chat",
+      description: "A terminal based IRC style messenger with end to end post-quantum encryption. Every session runs a fresh ML-KEM-768 (FIPS 203) key exchange, derives a session key via HKDF-SHA256 and encrypts messages with AES-256-GCM, leaving the server as a blind relay that only ever forwards opaque ciphertext. Private keys are generated and kept client side, so plaintext and session keys never touch the wire.",
+      // image: mappaide,
+      tech: ["C++20", "ML-KEM-768", "AES-256-GCM", "OpenSSL", "TCP Sockets", "CMake"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/irc-encrypted",
+    },
+        {
+      title: "Axiom",
+      image: axiom,
+      description: "A cognitive-aware task scheduler that treats attention, not time, as the scarce resource. A deterministic engine scores tasks by cognitive load, deadline pressure and morning/afternoon/evening budgets, chunks long tasks across days, and exposes a reasoning chain explaining why each task was placed, deferred or dropped. Section weights are tuned over time from completion efficiency, and RAG based syllabus ingestion turns PDFs into schedulable study tasks.",
+      // image: mappaide,
+      tech: ["NextJS", "TypeScript", "Postgres", "Transformers.js", "Tesseract.js"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/Axiom",
+    },
+        {
+      title: "KungFuTyper",
+      description: "A 2.5D browser based typing game where you defend your keyboard's stability against bugs. You move the avatar by hitting keys, wiping out every bug along the path between them, and the run ends the moment stability drops to 0%.",
+      // image: mappaide,
+      tech: ["NextJS", "TypeScript", "Supabase", "LiveBlocks", "Tailwind CSS"],
+      start: true,
+      demo: "https://kungfutyper.vercel.app",
+      github: "https://github.com/Ghruank/kungfutyper",
+    },
+        {
+      title: "TrendFall",
+      description: "A viral trend intelligence platform that ingests content from Instagram, Twitter, Reddit and YouTube, tags it with an LLM, and predicts whether a trend is exploding or fading using XGBoost and change point detection. Custom engagement and popularity formulas normalise metrics across platforms, and SHAP explains why a trend is moving, all surfaced on a dashboard of interactive timeseries reports.",
+      // image: mappaide,
+      tech: ["NextJS", "FastAPI", "XGBoost", "Ruptures", "Groq (Llama 3)", "Supabase"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/TrendFall",
+    },
+        {
+      title: "StudySphere",
+      description: "An offline-first native mobile app for iOS and Android that unifies a student's academic and career journey. Lessons, notes, quizzes and timetables work without internet and sync when back online, alongside personal dashboards, resume and mock interview tools, real time mentorship chat, LMS integrations, OCR timetable scanning and full screen reader support.",
+      // image: mappaide,
+      tech: ["NextJS", "Capacitor", "Supabase", "LiveBlocks"],
+      start: true,
+      // demo: "https://demo.com",
+      github: "https://github.com/Ghruank/StudySphere",
+    },
+        {
+      title: "CogniSphere",
+      description: "An AI powered personal learning ecosystem that unifies roadmaps, lessons, assessments and tutoring into one adaptive platform. Learners upload notes, PDFs or PPTs and get AI generated courses, slides with speaker notes, flashcards and dynamic quizzes, along with a 3D Socratic tutor for doubt solving and roadmaps that adapt in real time to performance.",
+      image: cognisphere,
+      tech: ["NextJS", "React Native", "FastAPI", "Supabase", "ChromaDB", "Gemini 2.0 Flash"],
+      start: true,
+      demo: "https://launchpad-mappa-git-main-amal-vermas-projects.vercel.app/",
+      github: "https://github.com/Ghruank/launchpad-Mappa",
+    },
         {
       title: "Exotic Option Pricing Model",
       description: "A pricing model for exotic options such as Knock-In, Knock-Out, Barrier, Asian, Binary (Digital), LookBack and Chooser Options. Models such as Monte Carlo, Heston, Black-Scholes and Binomial.",
@@ -39,7 +107,7 @@ export default function ProjectsPage() {
         {
       title: "Project X VJTI Website",
       description: "Website for Project X.",
-      // image: mappaide,
+      image: projectx,
       tech: ["NextJS", "FastAPI"],
       start: true,
       demo: "https://projectx2025.vercel.app/",
@@ -57,7 +125,7 @@ export default function ProjectsPage() {
                 {
       title: "Task Manager",
       description: "A task management app built with React, Redux, and Webpack, allowing users to filter, categorize, prioritize, search, and reorder tasks via drag-and-drop. It supports due dates with notifications and ensures data persistence via a backend. Designed for a seamless and responsive user experience",
-      // image: mappaide,
+      image: taskmanager,
       tech: ["NextJS", "FastAPI"],
       start: true,
       demo: "https://jde-taskmanager.vercel.app/",

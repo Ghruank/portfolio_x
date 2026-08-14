@@ -21,8 +21,8 @@ export default function ContactPage() {
               <h2 className="font-semibold">Email</h2>
             </div>
             <div className="flex items-center justify-between">
-              <p className="text-muted-foreground break-all">gpkothare_b23@it.vjti.ac.in</p>
-              <a href="mailto:gpkothare_b23@it.vjti.ac.in" target="_blank" rel="noopener noreferrer">
+              <p className="text-muted-foreground break-all">ghruankkothare@gmail.com</p>
+              <a href="mailto:ghruankkothare@gmail.com" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4 text-muted-foreground" />
               </a>
             </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard} from "lucide-react"
+import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard, Brain} from "lucide-react"
 import PageHeader from "@/components/page-header"
 import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 
@@ -12,7 +12,7 @@ export default function SkillsPage() {
     {
       category: "Languages",
       icon: Languages,
-      items: ["C/C++", "Python", "JavaScript", "TypeScript"]
+      items: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"]
     },
     {
       category: "Frontend Development",
@@ -22,22 +22,27 @@ export default function SkillsPage() {
     {
       category: "Backend Development",
       icon: Code,
-      items: ["ExpressJS", "Flask", "FastAPI"],
+      items: ["ExpressJS", "Flask", "FastAPI", "SpringBoot"],
     },
     {
       category: "Database Management",
       icon: DatabaseIcon,
-      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)", "GoLang for DB"],
+      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)"],
     },
     {
       category: "Competitive Programming",
       icon: Computer,
-      items: ["CodeChef: 3 Star", "Codeforces: Pupil", "ICPC'24 Regionalist"],
+      items: ["CodeChef: 3 Star", "Codeforces: Specialist", "2x ICPC Regionalist"],
     },
     {
       category: "Machine Learning",
       icon: GitGraph,
-      items: ["LSTMs", "Transformers", "Informers", "Llama Local" ],
+      items: ["Deep Learning", "Parameter Tuning", "Model Building"],
+    },
+    {
+      category: "Artificial Intelligence",
+      icon: Brain,
+      items: ["LLM Integration", "Fine Tuning", "Prompt Engineering"],
     },
     // {
     //   category: "Database",
