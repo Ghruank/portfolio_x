@@ -1,7 +1,7 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard, Brain} from "lucide-react"
+import { Code, Database, Globe, Palette, Computer, GitGraph, Languages, DatabaseIcon, CircuitBoard, Brain, CandlestickChart, Cpu, Container } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import { useMobileSidebar } from "@/components/mobile-sidebar-provider"
 
@@ -12,22 +12,37 @@ export default function SkillsPage() {
     {
       category: "Languages",
       icon: Languages,
-      items: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"]
+      items: ["C", "C++", "Python", "Go", "Rust", "Java", "JavaScript", "TypeScript", "SQL", "R"]
+    },
+    {
+      category: "Quantitative Finance",
+      icon: CandlestickChart,
+      items: ["Options Pricing (Black-Scholes, Heston, Binomial)", "Monte Carlo Simulation", "Exotic Options", "Volatility Modelling (GARCH, FHS)", "Backtesting", "Model Risk Management"],
+    },
+    {
+      category: "Systems & Low Latency",
+      icon: Cpu,
+      items: ["Matching Engines", "Latency Benchmarking", "Async I/O (Tokio)", "Network Programming (TCP Sockets)", "Post-Quantum Cryptography (ML-KEM)", "Bare-metal ARM"],
     },
     {
       category: "Frontend Development",
       icon: Palette,
-      items: ["ReactJS", "NextJS", "Tailwind CSS", "ShadCN" ],
+      items: ["ReactJS", "NextJS", "SvelteKit", "Tailwind CSS", "ShadCN", "Capacitor"],
     },
     {
       category: "Backend Development",
       icon: Code,
-      items: ["ExpressJS", "Flask", "FastAPI", "SpringBoot"],
+      items: ["FastAPI", "Pydantic", "SQLAlchemy", "Flask", "SpringBoot", "ExpressJS"],
     },
     {
       category: "Database Management",
       icon: DatabaseIcon,
-      items: ["SQL (MySQL and Supabase)", "NoSQL (Firebase)"],
+      items: ["SQL (PostgreSQL, MySQL, SQLite, Supabase)", "TimescaleDB", "Redis", "NoSQL (MongoDB, Firebase)"],
+    },
+    {
+      category: "Data Engineering",
+      icon: Database,
+      items: ["Databricks", "PySpark", "Delta Lake", "Redpanda (Kafka)", "NumPy & pandas"],
     },
     {
       category: "Competitive Programming",
@@ -37,12 +52,17 @@ export default function SkillsPage() {
     {
       category: "Machine Learning",
       icon: GitGraph,
-      items: ["Deep Learning", "Parameter Tuning", "Model Building"],
+      items: ["PyTorch", "scikit-learn", "XGBoost & LightGBM", "SHAP", "Conformal Prediction", "Time Series Forecasting"],
     },
     {
       category: "Artificial Intelligence",
       icon: Brain,
-      items: ["LLM Integration", "Fine Tuning", "Prompt Engineering"],
+      items: ["LLM Agents & Tool Calling (MCP)", "RAG & Information Retrieval", "Hugging Face Transformers", "Fine Tuning", "Prompt Engineering"],
+    },
+    {
+      category: "DevOps",
+      icon: Container,
+      items: ["Docker", "Kubernetes (K3s)", "gVisor", "GitHub Actions", "pytest"],
     },
     // {
     //   category: "Database",
@@ -52,12 +72,12 @@ export default function SkillsPage() {
     {
       category: "Hardware",
       icon: CircuitBoard,
-      items: ["Arduino", "ESP32", "ROS2"],
+      items: ["ESP32 (ESP-IDF, FreeRTOS)", "Bluetooth Low Energy", "Raspberry Pi", "Arduino", "ROS2"],
     },
     {
       category: "Other Skills",
       icon: Globe,
-      items: ["Linux","Nvim","Latex"],
+      items: ["Linux (Arch, NixOS)", "Git", "Nvim", "Latex", "CMake"],
     },
   ]
 

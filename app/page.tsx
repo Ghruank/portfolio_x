@@ -11,6 +11,7 @@ import windows95 from '@/assets/windows95.png';
 import arch from '@/assets/arch.png';
 import mappaide from '@/assets/mappaide.png';
 import Link from 'next/link';
+import { ABOUT_ME, INTERESTS } from '@/lib/profile';
 import { useMobileSidebar } from '@/components/mobile-sidebar-provider';
 
 export default function Home() {
@@ -85,7 +86,7 @@ export default function Home() {
           <Card className="p-4">
             <h2 className="font-semibold mb-2">About Me</h2>
             <p className="text-sm text-muted-foreground">
-              A fullstack developer with expertise in NextJS and FastAPI, a competitive programmer with immense curiosity in algorithm designing and a machine learning enthusiast.
+              {ABOUT_ME}
             </p>
           </Card>
           <Card className="p-4">
@@ -106,20 +107,11 @@ export default function Home() {
           <Card className="p-4">
             <h2 className="font-semibold mb-2">Interests</h2>
             <ul className="space-y-2">
-              <li className="text-sm hover:text-primary cursor-pointer">
-Currently building low latency systems for high frequency trading.              </li>
-              <li className="text-sm hover:text-primary cursor-pointer">
-              Love solving problems with algorithms and figuring out efficient ways to implement them.
-              </li>
-              <li className="text-sm hover:text-primary cursor-pointer">
-              Typing at 120+ WPM on my ZBook, trying to push that even higher.
-              </li>
-              <li className="text-sm hover:text-primary cursor-pointer">
-                Massive Jujutsu Kaisen manga fan, always down to chat about it.
-              </li>
-              <li className="text-sm hover:text-primary cursor-pointer">
-              Oh, and yeah… I use Arch, btw.
-              </li>
+              {INTERESTS.map((interest) => (
+                <li key={interest} className="text-sm hover:text-primary cursor-pointer">
+                  {interest}
+                </li>
+              ))}
             </ul>
           </Card>
 
@@ -133,15 +125,6 @@ Currently building low latency systems for high frequency trading.              
 
           {/* Featured Project for Mobile */}
 
-        </div>
-
-        <div className="mt-8 sm:hidden">
-          <Card className="p-4 bg-accent text-center">
-            <h2 className="font-semibold mb-2">Navigation Tips</h2>
-            <p className="text-sm text-muted-foreground">
-              Tap on the icons below to explore different sections of my portfolio. 
-            </p>
-          </Card>
         </div>
 
         {/* Desktop view content (Featured Project) */}

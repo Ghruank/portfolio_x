@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import { RESUME_URL } from "@/lib/profile"
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { User, Computer, Briefcase, Mail, FileText, Github, Twitter, Linkedin, Leaf, X, BookOpen, Building2 } from 'lucide-react'
@@ -21,10 +22,10 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
     { name: 'Profile', href: '/', icon: User },
     { name: 'Experience', href: '/experience', icon: Building2 },
     { name: 'Skills', href: '/skills', icon: Computer },
-    { name: 'Projects', href: '/projects', icon: Briefcase },
-    { name: 'Blog', href: '/blog', icon: BookOpen },
-    { name: 'Contact', href: '/contact', icon: Mail },
     { name: 'Achievements', href: '/achievements', icon: FileText },
+    { name: 'Projects', href: '/projects', icon: Briefcase },
+    // { name: 'Blog', href: '/blog', icon: BookOpen }, // blog disabled until posts exist; route lives in app/_blog
+    { name: 'Contact', href: '/contact', icon: Mail },
   ]
 
   const handleLinkClick = () => {
@@ -103,7 +104,7 @@ export default function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
               asChild
               onClick={handleLinkClick}
             >
-              <Link href="https://drive.google.com/file/d/1n-8o5KrY8-czHcRITMaE0vTfDR-2tvTB/view?usp=sharing" target="_blank">
+              <Link href={RESUME_URL} target="_blank">
                 <Leaf className="h-5 w-5" />
                 Resume
               </Link>

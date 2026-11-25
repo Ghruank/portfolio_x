@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import { RESUME_URL } from "@/lib/profile"
 import { usePathname } from 'next/navigation'
 import { Home, User, Briefcase, Mail, FileText, Computer, Leaf } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -20,9 +21,9 @@ export default function MobileNav() {
   const navigation = [
     { name: 'Profile', href: '/', icon: User },
     { name: 'Skills', href: '/skills', icon: Computer },
+    { name: 'Achievements', href: '/achievements', icon: FileText },
     { name: 'Projects', href: '/projects', icon: Briefcase },
     { name: 'Contact', href: '/contact', icon: Mail },
-    { name: 'Achievements', href: '/achievements', icon: FileText },
   ]
 
   return (
@@ -48,7 +49,7 @@ export default function MobileNav() {
           })}
         </div>
         <Link
-          href="https://drive.google.com/file/d/1n-8o5KrY8-czHcRITMaE0vTfDR-2tvTB/view?usp=sharing"
+          href={RESUME_URL}
           target="_blank"
           className={cn(
             "fixed bottom-20 right-4 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center z-50 transition-all duration-1000",
